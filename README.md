@@ -1,9 +1,10 @@
-# Creating a README.md file for the Employee Management System project
-
-readme_content = """
 # Employee Management System
 
 This is a web-based Employee Management System designed to handle the administrative tasks of managing employees, their details, and other organizational data efficiently. The system includes features like employee data management, authentication, salary management, and more.
+
+1. Frontend : npm run dev
+2. Server : npm start
+
 
 ## Features
 
@@ -14,6 +15,16 @@ This is a web-based Employee Management System designed to handle the administra
 - **User Roles**: Admins can manage employee data, while employees can view their profiles and log out securely.
 - **Responsive Design**: User-friendly interface, responsive across devices with modern UI components.
 - **Profile Management**: Employees can view their own details such as name, email, and salary.
+
+## Screenshots
+
+![](./Front-End%20Folder/public/Images/1.png)
+Admin Login
+![](./Front-End%20Folder/public/Images/2.png)
+![](./Front-End%20Folder/public/Images/3.png)
+Employee Login
+![](./Front-End%20Folder/public/Images/4.png)
+
 
 ## Tech Stack
 
@@ -53,15 +64,7 @@ This is a web-based Employee Management System designed to handle the administra
     npm install
     ```
 
-4. Set up your MySQL database. Create a database called `employee_management_system` and configure your environment variables (create a `.env` file):
-
-    ```
-    DB_HOST=your_database_host
-    DB_USER=your_database_user
-    DB_PASS=your_database_password
-    DB_NAME=employee_management_system
-    JWT_SECRET=your_jwt_secret_key
-    ```
+4. Set up your MySQL database. Create database and all the tables in Xampp control panel 
 
 5. Run migrations (if any) and seeders to set up tables and default data (use an ORM like Sequelize if it's set up, or SQL scripts).
 
@@ -99,32 +102,4 @@ This is a web-based Employee Management System designed to handle the administra
 - **Admin Routes**:
   - `/auth/admin_records` - Fetch list of admins.
   - `/auth/admin_count` - Get total count of admins.
-  
-... (add more as needed)
 
-## Screenshots
-
-(Add screenshots of the system in action for better clarity on usage)
-
-## Contributing
-
-1. Fork the repository.
-2. Create your feature branch: `git checkout -b feature/your-feature-name`.
-3. Commit your changes: `git commit -m 'Add new feature'`.
-4. Push to the branch: `git push origin feature/your-feature-name`.
-5. Open a pull request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-For any inquiries, feel free to reach out via the project's GitHub repository.
-"""
-
-# Saving the content to README.md
-with open("/mnt/data/README.md", "w") as file:
-    file.write(readme_content)
-
-"/mnt/data/README.md"
